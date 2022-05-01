@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: linear-gradient(95deg, rgb(184, 81, 141), rgb(221, 156, 194));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start-menu{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(5px);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.start{
+    height: 60px;
+    width: 150px; 
+    background:
+    radial-gradient(circle at 50% 0,
+      rgba(255,0,0,.5),
+      rgba(255,0,0,0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(0,0,255,.5),
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(0,255,0,.5),
+      rgba(0,255,0,0) 70.71%) beige;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+}
+.start:hover{
+    background-color: rgb(170, 170, 170);
+}
+.card{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background:
+        linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 99;
+}
+.top{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+.middle{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: black;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-family: 'Tulpen One', cursive;
+}
+#number{
+    height: 75px;
+    width: 150px;
+    border: 2px solid black;
+    border-bottom: none;
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background:
+    radial-gradient(circle at 50% 0,
+      rgba(255,0,0,.5),
+      rgba(255,0,0,0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(0,0,255,.5),
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(0,255,0,.5),
+      rgba(0,255,0,0) 70.71%) beige;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.submitNumber{
+    height: 60px;
+    width: 150px; 
+    border: 2px solid black;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background:
+    radial-gradient(circle at 50% 0,
+      rgba(255,0,0,.5),
+      rgba(255,0,0,0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(0,0,255,.5),
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(0,255,0,.5),
+      rgba(0,255,0,0) 70.71%) beige;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.reset{
+  height: 30px;
+  width: 60px; 
+  background:
+  radial-gradient(circle at 50% 0,
+    rgba(255,0,0,.5),
+    rgba(255,0,0,0) 70.71%),
+  radial-gradient(circle at 6.7% 75%,
+    rgba(0,0,255,.5),
+    rgba(0,0,255,0) 70.71%),
+  radial-gradient(circle at 93.3% 75%,
+    rgba(0,255,0,.5),
+    rgba(0,255,0,0) 70.71%) beige;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.reset:hover{
+    background-color: rgb(170, 170, 170);
+}
+.submitNumber:hover{
+    background-color: rgb(170, 170, 170);
+}
+#number:hover{
+  background-color: rgb(170, 170, 170);
+}

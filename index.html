@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="card">
+            <div class="top">
+                <h1>Guess the Number <br> from 1 to 100</h1>
+                <div class="box">
+                    <h1 class="quas">?</h1>
+                </div>
+                <p id="muchORless"></p>
+            </div>
+            <div class="middle">
+                <input maxlength="3" type="text" id="number">
+                <button class="submitNumber" onclick="guess()">Guess the Number</button>
+            </div>
+            <div class="bottom">
+                <p id="attempts-count">Attempts left - 10</p>
+                <button class="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="start-menu">
+            <button class="start" onclick="start()">Start</button>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
