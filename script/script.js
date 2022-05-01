@@ -32,9 +32,11 @@ function guess(){
             }else{
                 document.querySelector('.quas').textContent = secret
                 alert('You win! Your attempts '+count)
+                setTimeout(reset, 500)
             }
         }else{
-            alert('You have no attempts. Try again')
+            alert('You have no attempts. Try again. The number was ' + secret)
+            setTimeout(reset, 500)
         }
     }else{
         alert("You didn't print anything. Please try again")
