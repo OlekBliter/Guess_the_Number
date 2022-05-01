@@ -3,7 +3,7 @@ let count = 0
 let attempts = 10
 let secret = 0
 function start(){
-    secret =  Math.floor(Math.random()*100)
+    secret =  Math.ceil(Math.random()*100)
     console.log(secret)
 
     count = 0
