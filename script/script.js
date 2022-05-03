@@ -20,16 +20,21 @@ function guess(){
     if(document.getElementById('number').value!=''){
         if(attempts>0){
             if(document.getElementById('number').value>secret){
+                document.getElementById('muchORless').style.display= 'none'
+                setTimeout(block, 500)
                 document.getElementById('muchORless').textContent = 'Your number is too large'
                 count++
                 attempts--
                 document.getElementById('attempts-count').textContent = 'Attempts left - ' + attempts                 
             }else if (document.getElementById('number').value<secret){
+                document.getElementById('muchORless').style.display= 'none'
+                setTimeout(block, 500)
                 document.getElementById('muchORless').textContent = 'Your number is too small'
                 count++
                 attempts--
                 document.getElementById('attempts-count').textContent = 'Attempts left - ' + attempts
-            }else{
+            }else{               
+                document.getElementById('muchORless').style.display= 'none'
                 document.querySelector('.quas').textContent = secret
                 alert('You win! Your attempts '+count)
                 setTimeout(reset, 500)
@@ -41,6 +46,9 @@ function guess(){
     }else{
         alert("You didn't print anything. Please try again")
     }
+}
+function block(){    
+    document.getElementById('muchORless').style.display= 'block'
 }
 function reset(){
     document.querySelector('.start-menu').style.zIndex = z+1

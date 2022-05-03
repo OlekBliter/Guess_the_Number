@@ -121,10 +121,14 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+#number::-webkit-outer-spin-button,
+#number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+#number::placeholder{
+  font-size: 17px;
+  color: rgb(100, 98, 98);
 }
 .submitNumber{
     height: 60px;
